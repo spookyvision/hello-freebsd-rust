@@ -7,6 +7,7 @@ The directory layout is loosely based on [johalun/echo](https://github.com/johal
 `build.sh` builds and loads the module. It overrides `CARGO_TARGET_DIR` because I had the repo sitting on a slow as hell NAS.
 
 # Prerequisites
+- as of 2021-03-12: nightly Rust (for `build-std`)
 - You need to install llvm9's libclang with the ports system. This takes *bloody ages* and also (on my system) required manually patching up a mismatched perl symlink in `/usr/local/bin` (some dependency required `perl5.32.0` but `perl5.32.1` was installed). I forgot which toggles are required to end up with libclang.
 
 - You need to have the FreeBSD sources extracted like so:
